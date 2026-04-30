@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 4: Transformasi Tanpa Tanding</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
+        :root {
+            --bg-color: #030303;
+            --accent-gold: #ffca28; /* Emas untuk melambangkan keteguhan jiwa dan ketuhanan */
+            --text-main: #e0e0e0;
+            --shadow-glow: 0 0 25px rgba(255, 202, 40, 0.3);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at center, #1a1a00 0%, #030303 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .chapter-tag {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.75rem;
+            letter-spacing: 12px;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            text-align: center;
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 60px;
+            font-style: italic;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+
+        .content {
+            line-height: 2.4;
+            font-size: 1.15rem;
+            text-align: justify;
+            position: relative;
+        }
+
+        .content::before {
+            content: '“';
+            position: absolute;
+            left: -50px;
+            top: -20px;
+            font-size: 5rem;
+            color: var(--accent-gold);
+            opacity: 0.2;
+            font-family: serif;
+        }
+
+        .highlight {
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 35px;
+            opacity: 0;
+            filter: blur(5px);
+            animation: focusIn 2s ease-out forwards;
+        }
+
+        p:nth-child(1) { animation-delay: 0.5s; }
+        p:nth-child(2) { animation-delay: 1.8s; }
+        p:nth-child(3) { animation-delay: 3s; }
+
+        @keyframes focusIn {
+            to { opacity: 1; filter: blur(0); }
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            transition: all 0.5s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #888;
+        }
+
+        .btn-next {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        .btn-next:hover {
+            background: var(--accent-gold);
+            color: #000;
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* Overlay Decor */
+        .vignette {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            box-shadow: inset 0 0 150px #000;
+            pointer-events: none;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="vignette"></div>
+    <div class="container">
+        <span class="chapter-tag">Bagian Empat</span>
+        <h1>Ekskavasi Jiwa</h1>
+        
+        <div class="content">
+            <p>
+                Dunia seolah membelah dadaku dengan paksa, mencoba mengganti isinya dengan narasi yang bukan milikku. Mereka menghisap pikiran-pikiranku, mencoba menghapus setiap memori yang tersisa, dan mengunci mulutku dalam kebisuan yang panjang. Namun, di tengah kehampaan itu, aku justru lahir kembali—menjadi sosok yang <span class="highlight">tanpa tanding</span>, berdiri di atas puing-puing kepedihan yang kini menjadi pondasi kekuatanku.
+            </p>
+            <p>
+                Kau mungkin membenciku karena cahaya baru yang kini menyala di dalam dadaku, sebuah api yang tak mampu kau padamkan meski kau coba terus menerus. Biarlah kebencian itu menjadi saksi bahwa aku tidak lagi bisa kau kendalikan. Aku telah membuang segala ketergantungan pada sandaran semu manusia.
+            </p>
+            <p>
+                Di dunia ini, hingga ke ujung masa depan yang masih menjadi rahasia, aku tidak akan pernah lagi mengandalkan siapa pun. Aku hanya memegang erat dua hal dalam genggamanku: <span class="highlight">kekuatan diriku sendiri</span> dan takdir suci yang telah digariskan oleh Tuhanku, <span class="highlight">Allah</span>. Di bawah naungan-Nya, aku tak lagi gentar meski harus melangkah sendirian dalam kegelapan.
+            </p>
+        </div>
+
+        <div class="navigation">
+            <a href="bab3.html" class="btn">&larr; KEMBALI</a>
+            <a href="bab5.html" class="btn btn-next">MENITI TAKDIR &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

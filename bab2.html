@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 2: Serpihan Kenangan dan Pendar Harapan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
+        :root {
+            --bg-color: #050505;
+            --accent-soft: #a855f7; /* Ungu untuk kedalaman emosi dan duka */
+            --text-main: #d1d1d1;
+            --shadow-glow: 0 0 20px rgba(168, 85, 247, 0.4);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at center, #0f0a15 0%, #050505 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .chapter-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.8rem;
+            letter-spacing: 10px;
+            color: var(--accent-soft);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            font-style: italic;
+            color: #fff;
+        }
+
+        .content {
+            line-height: 2.2;
+            font-size: 1.1rem;
+            text-align: justify;
+            border-left: 2px solid rgba(168, 85, 247, 0.3);
+            padding-left: 30px;
+            margin-bottom: 50px;
+        }
+
+        .highlight {
+            color: #fff;
+            text-shadow: 0 0 5px var(--accent-soft);
+        }
+
+        p {
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInRise 1.5s ease-out forwards;
+        }
+
+        p:nth-child(1) { animation-delay: 0.5s; }
+        p:nth-child(2) { animation-delay: 1.5s; }
+        p:nth-child(3) { animation-delay: 2.5s; }
+
+        @keyframes fadeInRise {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .btn-next {
+            border-color: var(--accent-soft);
+            color: var(--accent-soft);
+        }
+
+        .btn-next:hover {
+            background: var(--accent-soft);
+            color: #000;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .scanline {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="container">
+        <div class="chapter-number">Bagian Dua</div>
+        <h1>Lentera di Balik Layar Kaca</h1>
+        
+        <div class="content">
+            <p>
+                Hidup tak pernah menjanjikan kelembutan bagiku. Saat jemari kecilku baru saja belajar mengeja dunia, takdir telah merenggut detak jantung kehidupanku— <span class="highlight">Ibu pergi untuk selamanya</span>. Di saat aku sangat membutuhkan hangatnya kasih sayang untuk sekadar mengadu, aku justru dipaksa berdiri di tengah badai kesunyian yang membekukan.
+            </p>
+            <p>
+                Aku pernah merasa berada di titik jenuh yang luar biasa. Bingung, lelah, dan nyaris kehilangan arah di usia yang masih sangat belia. Dunia terasa begitu luas namun tak memberiku ruang untuk bersandar. Sejak kelas tiga sekolah dasar, aku mulai mencari pelarian, mencoba memahami bahasa asing yang dipancarkan oleh sebuah kotak pendar bernama komputer.
+            </p>
+            <p>
+                Namun, di balik pendar monitor itulah, aku menemukan sebuah kedamaian yang tak pernah kutemukan di mana pun. Setiap baris instruksi dan logika digital yang kupelajari seolah menjadi obat bagi luka yang menganga. Aku pun menyadari, mungkin inilah jalan hidup yang telah digariskan untukku—menemukan kebahagiaan di tengah kesendirian, dan merajut masa depan dari pendar cahaya digital.
+            </p>
+        </div>
+
+        <div class="navigation">
+            <a href="bab1.html" class="btn">&larr; KEMBALI</a>
+            <a href="bab3.html" class="btn btn-next">TELUSURI LEBIH JAUH &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

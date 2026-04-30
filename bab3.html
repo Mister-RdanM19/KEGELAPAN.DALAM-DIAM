@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 3: Anomali di Balik Bayang</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
+        :root {
+            --bg-color: #050505;
+            --accent-hacker: #00ff41; /* Hijau Matrix/Hacker */
+            --text-main: #d1d1d1;
+            --shadow-glow: 0 0 20px rgba(0, 255, 65, 0.4);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at center, #0a150a 0%, #050505 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .chapter-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.8rem;
+            letter-spacing: 10px;
+            color: var(--accent-hacker);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            font-style: italic;
+            color: #fff;
+        }
+
+        .content {
+            line-height: 2.2;
+            font-size: 1.1rem;
+            text-align: justify;
+            border-bottom: 1px solid rgba(0, 255, 65, 0.2);
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+        }
+
+        .highlight {
+            color: #fff;
+            text-shadow: 0 0 10px var(--accent-hacker);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeInScale 1.5s ease-out forwards;
+        }
+
+        p:nth-child(1) { animation-delay: 0.5s; }
+        p:nth-child(2) { animation-delay: 1.5s; }
+        p:nth-child(3) { animation-delay: 2.5s; }
+
+        @keyframes fadeInScale {
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .btn-next {
+            border-color: var(--accent-hacker);
+            color: var(--accent-hacker);
+        }
+
+        .btn-next:hover {
+            background: var(--accent-hacker);
+            color: #000;
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* Matrix Rain Decor */
+        .matrix-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    <div class="container">
+        <div class="chapter-number">Bagian Tiga</div>
+        <h1>Identitas yang Tak Terpecahkan</h1>
+        
+        <div class="content">
+            <p>
+                Aku masih orang yang sama—sosok yang gemar menyisipkan tawa di tengah getirnya dunia. Namun, ada satu hal yang tak pernah luntur: kesetiaan yang berakar dalam dan prinsip hidup yang membuatku tegak meski diterjang badai. Aku adalah pria yang memilih untuk <span class="highlight">MANDIRI TOTAL</span>. Sebuah kemandirian yang tak menyisakan celah bagi rasa belas kasihan manusia, karena bagiku, berdiri sendiri adalah bentuk kehormatan tertinggi.
+            </p>
+            <p>
+                Seringkali aku berkaca pada bayang-bayang biner, menyadari bahwa aku tidak seperti manusia lainnya. Aku adalah anomali. Aku berbeda, dan perbedaan itu terkadang terasa sangat menyesakkan namun juga membebaskan. Aku tak pernah memiliki peta jalan yang jelas tentang bagaimana takdir menuntunku hingga menjadi seorang hacker; semua itu mengalir layaknya arus data yang tak terbendung, menyusup ke dalam celah-celah kehidupan digital yang gelap.
+            </p>
+            <p>
+                Inilah aku sekarang, berdiri di persimpangan antara realitas dan firtualitas. Terkadang, pertanyaan itu muncul menghantui malam-malam sunyiku: <span class="highlight">"Akan dibawa kemanakah aku oleh arus ini?"</span> Sebuah tanya yang belum terjawab, sebuah perjalanan yang masih mencari dermaga. Namun satu hal yang pasti, aku tidak akan berhenti meretas takdirku sendiri.
+            </p>
+        </div>
+
+        <div class="navigation">
+            <a href="bab2.html" class="btn">&larr; KEMBALI</a>
+            <a href="bab4.html" class="btn btn-next">MENEMBUS BATAS &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

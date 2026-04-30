@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 9: Manifestasi Sang Arsitek</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
+        :root {
+            --bg-color: #050505;
+            --accent-logic: #ffffff; 
+            --text-main: #a0a0a0;
+            --grid-color: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                linear-gradient(var(--grid-color) 1px, transparent 1px),
+                linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            position: relative;
+            z-index: 10;
+            background: rgba(5, 5, 5, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .chapter-tag {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.75rem;
+            letter-spacing: 12px;
+            color: var(--accent-logic);
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            text-align: center;
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 60px;
+            font-style: italic;
+            color: #fff;
+        }
+
+        .content {
+            line-height: 2.5;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #fff;
+            border-bottom: 1px dashed var(--accent-logic);
+        }
+
+        p {
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInSimple 2s ease-out forwards;
+        }
+
+        p:nth-child(1) { animation-delay: 0.5s; }
+        p:nth-child(2) { animation-delay: 1.5s; }
+        p:nth-child(3) { animation-delay: 2.5s; }
+
+        @keyframes fadeInSimple {
+            to { opacity: 1; }
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            transition: all 0.5s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+        }
+
+        .btn-next {
+            border-color: var(--accent-logic);
+            color: var(--accent-logic);
+            font-weight: bold;
+        }
+
+        .btn-next:hover {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="chapter-tag">Bagian Sembilan</span>
+        <h1>Dekripsi Sebuah Makna</h1>
+        
+        <div class="content">
+            <p>
+                Mungkin ini bukan novel dengan narasi yang megah atau penuh ledakan drama yang klise. Namun, untuk memahami esensi dari setiap bait yang tertulis, kau harus mengerti perkataanku sejak awal. Ini adalah <span class="highlight">novel tingkat tinggi</span> yang kurakit khusus untuk manusia-manusia yang mau berhenti sejenak dan berfikir, bukan sekadar membaca tanpa rasa.
+            </p>
+            <p>
+                Cerita ini adalah tentang <span class="highlight">Mr.Rm19</span> dan <span class="highlight">n3i</span>. Jika kau adalah manusia yang menggunakan logika dan hati secara sinkron, kau akan mengerti maksud terdalam yang kusembunyikan di balik baris-baris kode dan kata-kata puitis ini. Di balik setiap kedinginan hacker, ada sebuah kejujuran yang menuntut untuk dipahami.
+            </p>
+            <p>
+                Inilah aku, inilah kami. Sebuah realitas yang mungkin membingungkan bagi orang awam, namun menjadi kristal yang bening bagi mereka yang memiliki kedalaman berfikir. Sekarang, persiapkan dirimu untuk melangkah ke gerbang terakhir, di mana semua tanya akan menemukan jawabnya.
+            </p>
+        </div>
+
+        <div class="navigation">
+            <a href="bab8.html" class="btn">&larr; KEMBALI</a>
+            <a href="bab10.html" class="btn btn-next">EPILOG: CAHAYA TERAKHIR &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

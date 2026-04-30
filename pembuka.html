@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEGELAPAN DALAM DIAM YANG SUNYI DAN SEPI - Pembuka</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
+        :root {
+            --bg-color: #050505;
+            --accent-neon: #00f2ff;
+            --text-main: #d1d1d1;
+            --shadow-glow: 0 0 20px rgba(0, 242, 255, 0.6);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at center, #111 0%, #050505 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .novel-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.8rem;
+            letter-spacing: 6px;
+            color: var(--accent-neon);
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            opacity: 0.6;
+            text-align: center;
+        }
+
+        .content {
+            line-height: 2.2;
+            font-size: 1.1rem;
+            text-align: justify;
+            border-left: 2px solid rgba(0, 242, 255, 0.3);
+            padding-left: 30px;
+            margin-bottom: 50px;
+        }
+
+        .highlight {
+            color: #fff;
+            text-shadow: 0 0 10px var(--accent-neon);
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSimple 1.5s ease-out forwards;
+        }
+
+        p:nth-child(1) { animation-delay: 0.5s; }
+        p:nth-child(2) { animation-delay: 1.5s; }
+        p:nth-child(3) { animation-delay: 2.5s; }
+
+        @keyframes fadeInSimple {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* TOMBOL NEXT */
+        .btn-next {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 35px;
+            color: var(--accent-neon);
+            text-decoration: none;
+            border: 1px solid var(--accent-neon);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            background: transparent;
+            float: right;
+            animation: fadeInSimple 4s ease-out forwards;
+        }
+
+        .btn-next:hover {
+            background: var(--accent-neon);
+            color: #000;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .signature {
+            margin-top: 80px;
+            font-style: italic;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            color: rgba(209, 209, 209, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Efek Garis Digital */
+        .scanline {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="container">
+        <div class="novel-title">KEGELAPAN DALAM DIAM YANG SUNYI DAN SEPI</div>
+        
+        <div class="content">
+            <p>
+                Dunia mengenalku sebagai <span class="highlight">Ramdan</span>, namun di labirin biner yang tak berujung, namaku menggema sebagai <span class="highlight">Mr.Rm19</span>. Aku sering bertanya pada sunyi, mengapa jiwa ini merasa begitu utuh justru saat raga terisolasi di balik pendar cahaya monitor.
+            </p>
+            <p>
+                Di depan code-code yang beradu, aku tak lagi merasa asing. Ada sebuah kekuatan magis yang mengalir, membuatku merasa seolah menggenggam seluruh isi semesta hanya dalam satu klik. Di sini, di ruang hampa yang penuh dengan baris kode, aku bukan lagi pengamat—aku adalah penguasa takdirku sendiri.
+            </p>
+            <p>
+                Aku adalah penjaga rahasia di balik bayang-bayang infrastruktur digital. Seorang putra bangsa yang merajut kedaulatan dalam diam. Inilah hidupku, perjalananku sebagai <span class="highlight">Hacker Indonesia</span>, mencari cahaya di pusat kegelapan yang paling sunyi.
+            </p>
+
+            <a href="bab1.html" class="btn-next">MASUK KE LABIRIN &rarr;</a>
+        </div>
+
+        <div class="signature">— Prologue: Sang Arsitek Biner</div>
+    </div>
+</body>
+</html>

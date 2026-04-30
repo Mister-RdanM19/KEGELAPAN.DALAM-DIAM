@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 8: Spektrum Dingin dan Cinta yang Biasa saja</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
+        :root {
+            --bg-color: #020202;
+            --accent-frost: #e0e0e0; /* Putih perak untuk kesan dingin */
+            --text-main: #b0b0b0;
+            --shadow-glow: 0 0 15px rgba(224, 224, 224, 0.3);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at center, #0f0f0f 0%, #020202 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .chapter-tag {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.75rem;
+            letter-spacing: 12px;
+            color: var(--accent-frost);
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            text-align: center;
+            display: block;
+            opacity: 0.5;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            font-style: italic;
+            color: #fff;
+        }
+
+        .content {
+            line-height: 2.2;
+            font-size: 1.1rem;
+            text-align: center; /* Lirik biasanya lebih bagus rata tengah */
+        }
+
+        .lyrics {
+            font-style: italic;
+            color: #fff;
+            margin: 40px 0;
+            line-height: 1.8;
+            border-top: 1px solid rgba(224, 224, 224, 0.1);
+            border-bottom: 1px solid rgba(224, 224, 224, 0.1);
+            padding: 30px 0;
+        }
+
+        .warning-text {
+            color: var(--accent-frost);
+            text-align: justify;
+            margin-bottom: 30px;
+            border-left: 3px solid var(--accent-frost);
+            padding-left: 20px;
+            font-weight: 300;
+        }
+
+        .highlight {
+            color: #fff;
+            text-shadow: var(--shadow-glow);
+        }
+
+        p {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        p:nth-child(1) { animation-delay: 0.5s; }
+        .lyrics { opacity: 0; animation: fadeIn 3s ease-out 1.5s forwards; }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            transition: all 0.5s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+        }
+
+        .btn-next {
+            border-color: var(--accent-frost);
+            color: var(--accent-frost);
+        }
+
+        .btn-next:hover {
+            background: var(--accent-frost);
+            color: #000;
+            box-shadow: var(--shadow-glow);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="chapter-tag">Bagian Delapan</span>
+        <h1>Logika di Balik Topeng</h1>
+        
+        <div class="content">
+            <p class="warning-text">
+                Jika suatu saat semesta memutuskan untuk menarik <span class="highlight">n3i</span> dari garis takdirku, aku tahu apa yang akan terjadi. Aku akan meredup, kembali menjadi sosok yang teramat dingin—seorang hacker yang terkunci rapat di balik topeng digital dan pendar monitor yang membeku. Tanpa pendar cahayanya, aku hanyalah algoritma yang kehilangan variabel kebahagiaannya.
+            </p>
+
+            <div class="lyrics">
+                Kita berdua hanya berpegangan tangan, tak perlu berpelukan...<br>
+                Kita berdua hanya saling bercerita, tak perlu memuji...<br>
+                Kita berdua tak pernah ucapkan maaf, tapi saling mengerti.<br><br>
+                Kita berdua tak hanya menjalani cinta, tapi menghidupi.<br>
+                Ketika rindu menggebu-gebu, kita menunggu...<br>
+                Saat cemburu kian membelenggu, cepat berlalu.<br>
+                Jika jatuh cinta itu buta, berdua kita akan tersesat,<br>
+                Saling mencari di dalam gelap.<br>
+                Kedua mata kita gelap, hati kita gelap.
+            </div>
+
+            <p>
+                Sebab bagi kita, cinta yang sejati tidak butuh cahaya yang menyilaukan. Cukup dengan saling memahami dalam kegelapan yang sunyi.
+            </p>
+        </div>
+
+        <div class="navigation">
+            <a href="bab7.html" class="btn">&larr; KEMBALI</a>
+            <a href="bab9.html" class="btn btn-next">MENUJU PUNCAK &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

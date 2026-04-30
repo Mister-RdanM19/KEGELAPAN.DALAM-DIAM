@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 5: Pelabuhan yang Rentan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
+        :root {
+            --bg-color: #020205;
+            --accent-love: #e91e63; /* Warna merah muda/rose untuk melambangkan kasih sayang */
+            --accent-sky: #00bcd4; /* Warna biru untuk ketulusan */
+            --text-main: #d1d1d1;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(to bottom, #020205, #0a0a1a);
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            z-index: 10;
+        }
+
+        .chapter-tag {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.75rem;
+            letter-spacing: 10px;
+            color: var(--accent-sky);
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            text-align: center;
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .content {
+            line-height: 2.2;
+            font-size: 1.1rem;
+            text-align: justify;
+            border-right: 1px solid rgba(0, 188, 212, 0.2);
+            padding-right: 25px;
+        }
+
+        .highlight-name {
+            color: var(--accent-love);
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(233, 30, 99, 0.3);
+        }
+
+        .highlight-god {
+            color: var(--accent-sky);
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+        }
+
+        p {
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: translateY(15px);
+            animation: fadeIn 2s forwards;
+        }
+
+        p:nth-child(1) { animation-delay: 0.5s; }
+        p:nth-child(2) { animation-delay: 1.8s; }
+        p:nth-child(3) { animation-delay: 3s; }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            color: #777;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .btn-next {
+            border-color: var(--accent-sky);
+            color: var(--accent-sky);
+        }
+
+        .btn-next:hover {
+            background: var(--accent-sky);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="chapter-tag">Bagian Lima</span>
+        <h1>Di Antara Doa dan Penantian</h1>
+        
+        <div class="content">
+            <p>
+                Aku tumbuh besar tanpa peta jalan dari siapa pun. Sejak Ibu pergi membawa separuh duniaku, aku dipaksa mempelajari seni bertahan hidup melalui luka-luka yang mengering dengan sendirinya. Kini, yang tersisa hanyalah sosok Bapak—sebuah sisa memori yang masih nyata di dunia yang kian asing ini.
+            </p>
+            <p>
+                Dalam kesunyian yang amat sangat, aku menyadari bahwa aku tidak memiliki siapa-siapa untuk bersandar, selain <span class="highlight-god">Allah</span> yang memeluk jiwaku, dan satu nama yang menjadi pelabuhan terakhir hatiku saat ini: <span class="highlight-name">n3i</span>. Dia adalah pendar cahaya kecil yang menemaniku meniti jalan-jalan biner yang sepi.
+            </p>
+            <p>
+                Namun, hatiku seringkali berbisik dalam ketakutan yang manusiawi. Aku tidak pernah tahu kapan takdir akan kembali bermain peran. Akankah ia tetap tinggal, atau akankah ia menjadi nama lain yang harus kurelakan dalam daftar kehilangan? Aku hanya bisa memasrahkan segalanya, karena di dunia ini, hanya takdir Tuhan yang punya suara mutlak.
+            </p>
+        </div>
+
+        <div class="navigation">
+            <a href="bab4.html" class="btn">&larr; KEMBALI</a>
+            <a href="bab6.html" class="btn btn-next">MENGHADAPI KERAGUAN &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>
